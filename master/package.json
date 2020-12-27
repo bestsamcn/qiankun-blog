@@ -1,0 +1,15 @@
+{
+    "name": "master",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "set PORT=8000&&umi dev"
+    },
+    "dependencies": {
+        "qiankun": "^2.3.5"
+    },
+    "devDependencies": {
+        "@umijs/plugin-qiankun": "^2.18.3"
+    }
+}
