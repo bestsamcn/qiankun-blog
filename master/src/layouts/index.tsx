@@ -1,13 +1,16 @@
 import React from 'react';
-import styles from './index.css';
+import styles from './index.less';
+import zhCN from 'antd/lib/locale/zh_CN';
+import { ConfigProvider } from 'antd';
+const BasicLayout:React.FC = props => {
+    return (
+        <ConfigProvider  locale={zhCN}>
+            <div className={styles.layout}>
+                 {props.children}
+            </div>
 
-const BasicLayout: React.FC = props => {
-  return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to umi!</h1>
-      {props.children}
-    </div>
-  );
+        </ConfigProvider>
+    );
 };
 
 export default BasicLayout;

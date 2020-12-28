@@ -1,18 +1,22 @@
-import React from 'react';
-import styles from './index.css';
-import { formatMessage } from 'umi-plugin-locale';
-export default function() {
-  return (
-    <div className={styles.normal}>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/pages/index.js</code> and save to reload.</li>
-        <li>
-          <a href="https://umijs.org/guide/getting-started.html">
-            {formatMessage({ id: 'index.start' })}
-          </a>
-        </li>
-      </ul>
-    </div>
-  );
+import React, {FC } from 'react';
+import styles from './index.less';
+import { connect } from 'dva';
+import { Header } from '../components/layouts/header/Header';
+import { CommonModelState } from '../models/common';
+
+
+interface FCProps extends ConnectProps{
+    common:CommonModelState;
 }
+const Container:FC<FCProps> =  ({common, dispatch})=>{
+    const {isLogin, iShowMenu} = common;
+    const setToggleMenu = ()=>{
+        dispatch({type:'common/setState', payload:{iShowMenu:!iShowMenu}});
+    }
+    return (
+        <div className={ styles.container }>
+            <Header setToggleMenu={setToggleMenu} isLogin iShowMenu />
+        </div>
+    );
+}
+export default connect((state:{common:CommonModelState})=>({common:state.common}))(Container);
