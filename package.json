@@ -10,6 +10,7 @@
     "scripts": {
         "start:master": "yarn workspace master run start",
         "start:home": "yarn workspace home run start",
+        "start":"concurrently \"npm run start:master\" \"npm run start:home\"",
         "build": "umi build",
         "test": "umi test",
         "lint": "eslint {src,mock,tests}/**/*.{ts,tsx} --fix",

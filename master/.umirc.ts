@@ -22,7 +22,7 @@ const config: IConfig = {
                     apps: [
                         {
                             name: 'home', // 唯一 id
-                            entry: '//localhost:8001', // html entry
+                            entry: '//localhost:3001', // html entry
                             base: '/home', // app1 的路由前缀，通过这个前缀判断是否要启动该应用，通常跟子应用的 base 保持一致
                             history: 'browser', // 子应用的 history 配置，默认为当前主应用 history 配置
                         },

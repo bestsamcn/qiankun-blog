@@ -4,6 +4,6 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "start":"set PORT=8001&&umi dev"
+        "start":"set PORT=3001&&umi dev"
     }
 }

@@ -4,7 +4,7 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "start": "set PORT=8000&&umi dev"
+        "start": "set PORT=3000&&umi dev"
     },
     "dependencies": {
         "qiankun": "^2.3.5"
