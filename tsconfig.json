@@ -9,10 +9,6 @@
     "sourceMap": true,
     "baseUrl": ".",
     "strict": true,
-    "paths": {
-      "@/*": ["src/*"],
-      "@tmp/*": ["src/pages/.umi/*"]
-    },
     "allowSyntheticDefaultImports": true
   }
 }

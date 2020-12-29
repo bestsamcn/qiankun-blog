@@ -4,6 +4,9 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "start":"set PORT=3001&&umi dev"
+        "start": "set PORT=3001&&umi dev"
+    },
+    "devDependencies": {
+        "@umijs/plugin-qiankun": "^2.18.3"
     }
 }

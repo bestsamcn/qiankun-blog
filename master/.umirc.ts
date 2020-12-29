@@ -1,4 +1,5 @@
 import { IConfig } from 'umi-types';
+import path from 'path';
 
 // ref: https://umijs.org/config/
 const config: IConfig = {

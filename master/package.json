@@ -7,6 +7,7 @@
         "start": "set PORT=3000&&umi dev"
     },
     "dependencies": {
+        "@umijs/plugin-qiankun": "^2.18.3",
         "qiankun": "^2.3.5"
     },
     "devDependencies": {

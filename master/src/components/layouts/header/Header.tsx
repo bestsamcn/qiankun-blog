@@ -11,7 +11,6 @@ export interface HeaderProps{
 
     setToggleMenu:()=>void;
 
-
 }
 
 
@@ -19,7 +18,7 @@ export const Header:React.FC<HeaderProps> = (props)=>{
     const { isLogin } = props;
     return(
         <div className={styles.header}>
-            <NavLink to="/" activeClassName={styles.active} className="logo color-green" >
+            <NavLink to="/" activeClassName={styles.active} className={`${styles.logo} color-green`} >
                 B<span className="color-black font-20">est</span>
             </NavLink>
             <div className={`${styles['nav-list']} sm-hide`}>

@@ -10,7 +10,7 @@
     "scripts": {
         "start:master": "yarn workspace master run start",
         "start:home": "yarn workspace home run start",
-        "start":"concurrently \"npm run start:master\" \"npm run start:home\"",
+        "start": "concurrently \"npm run start:master\" \"npm run start:home\"",
         "build": "umi build",
         "test": "umi test",
         "lint": "eslint {src,mock,tests}/**/*.{ts,tsx} --fix",
@@ -20,14 +20,16 @@
         "antd": "^3.19.5",
         "dva": "^2.6.0-beta.6",
         "react": "^16.8.6",
+        "react-addons-css-transition-group": "^15.6.2",
         "react-dom": "^16.8.6"
     },
     "devDependencies": {
         "@types/jest": "^23.3.12",
         "@types/react": "^16.7.18",
+        "@types/react-addons-css-transition-group": "^15.0.5",
         "@types/react-dom": "^16.0.11",
         "@types/react-test-renderer": "^16.0.3",
-        "@umijs/plugin-qiankun": "^1.7.0",
+        "@umijs/plugin-qiankun": "^2.18.3",
         "babel-eslint": "^9.0.0",
         "eslint": "^5.4.0",
         "eslint-config-umi": "^1.4.0",
